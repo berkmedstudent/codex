@@ -1,0 +1,26 @@
+name: "pomodoro-mac"
+description: |
+  Build a polished macOS Pomodoro timer app that runs natively on Apple Silicon Macs.
+
+  Requirements:
+  - Create a SwiftUI menu bar app called "FocusBell" that shows the current session type (Focus, Short Break, Long Break) and the remaining time.
+  - Include controls to start, pause/resume, skip to the next session, and reset the cycle.
+  - Follow the classic Pomodoro structure: 25-minute focus sessions, 5-minute short breaks, and a 15-minute long break after 4 completed focus sessions.
+  - Persist timer state so the countdown survives app restarts (e.g. save to `AppStorage` or `UserDefaults`).
+  - Deliver subtle macOS notifications (via `UNUserNotificationCenter`) at the end of each session with descriptive titles and messages.
+  - Play a short system sound at session transitions using the built-in audio APIs (`NSSound` or `AudioToolbox`).
+  - Provide a preferences window that lets the user customize focus/break durations and toggle notifications/sounds. Persist preferences.
+  - Ensure the app feels native: adopt SF Symbols, respect light/dark mode, and include accessible labels.
+
+  Implementation notes:
+  - Target macOS 13+ and use Swift 5.9 or newer.
+  - Organize the project so it can be opened directly in Xcode (create an `.xcodeproj`).
+  - Structure the code cleanly with models/view models (`ObservableObject`) separated from views.
+  - Add brief inline comments explaining timer scheduling, persistence, and notification handling decisions.
+
+  Deliverables inside the run directory:
+  - The complete Xcode project with source files.
+  - A README that explains how to build/run the app, grant notification permissions, and lists the main features.
+  - (Optional) include a simple App Icon asset placeholder so the project builds without additional setup.
+
+  After scaffolding, run `xcodebuild -scheme FocusBell -configuration Release -derivedDataPath build` to ensure the project compiles.
