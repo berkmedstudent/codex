@@ -41,4 +41,5 @@ Besides **camerascii**, you can experiment with:
 
 - **build‑codex‑demo**: recreate the original 2021 Codex YouTube demo.
 - **impossible‑pong**: where Codex creates more difficult levels.
+- **pomodoro‑mac**: scaffold a SwiftUI Pomodoro timer menu bar app for macOS.
 - **prompt‑analyzer**: make a data science app for clustering [prompts](https://github.com/f/awesome-chatgpt-prompts).
